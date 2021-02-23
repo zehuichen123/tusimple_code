@@ -1,3 +1,6 @@
+import matplotlib.patches as patches
+from matplotlib import colorbar as cbar
+
 def plot_anno_pred(anno_img, img, pred, save_path=None):
     min_det_score = 0.5
     boxes, scores = pred[:, :4].astype(np.int), pred[:, 4]
